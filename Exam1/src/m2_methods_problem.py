@@ -187,6 +187,8 @@ def multiply_primes(m, n):
     for k in range(m, n + 1):
         if is_prime(k):
             total = total * k
+    if total == 1:
+        total = 0
     return total
 # I couldn't figure out how to get the function to return 0 when there are no prime numbers in the interval.
 
